@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wraaper{
+  height: 100%;
+  width: 350px;
+  position: relative;
+}
+
+input[type = "checkbox"]{
+  display: none;
+}
+
+.wraaper .menu-btn{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  height: 45px;
+  width: 45px;
+  color: #f2f2f2;
+  z-index: 999;
+  background-color: #4a4a4a;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+
+#btn:checked ~ .menu-btn{
+  left: 250px;
+}
+
+/* #btn:checked ~ .menu-btn i:before{
+  content: "\food";
+} */
+
+
+
+#sidebar{
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #404040;
+  overflow: hidden;
+  left: -300px;
+}
+
+#btn:checked ~ #sidebar{
+  left: 0;
+ }
+
+.title{
+  color: #f2f2f2;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+  background: #333;
+}
+
+li{
+  padding-left: 20px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 2555, 255, 0.1);
+}
+
+li:hover{
+  border-top: 1px solid transparent;
+  box-shadow: 0 0 10px 3px #222;
+}
+
+li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.items, i{
+  margin-right: 10px;
+}
+
+.media-icons{
+  display: flex;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+.media-icons a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  line-height: 40px;
+  /* background-color: red; */
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 17px;
+}
+

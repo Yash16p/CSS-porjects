@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.image .profile-img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.box .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-data .name{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.text-data .job{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box .media-buttons{
+  margin-top: 13px;
+  display: flex
+}
+
+.media-buttons .link{
+  margin: 0 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+
+.box .buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 10px;
+  gap: 30px;
+}
+
+.buttons .btn{
+  background-color: #4070f4;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.buttons .btn:hover{
+  background-color: #0e4bf1;
+}
+
+
+.analytics{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px
+  
+}
+.analytics .data{
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 10px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
